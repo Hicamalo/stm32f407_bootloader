@@ -147,8 +147,8 @@ check_crc(uint8_t* data, size_t data_size, uint32_t input_crc) {
      * Алгоритм CRC32 MPEG-2 */
     uint32_t calculated_crc = HAL_CRC_Calculate(&hcrc, temp_data, temp_data_size);
 
-//    printf("Входные CRC байты - %08lx\n", input_crc);
-//    printf("Вычисленные STM32 CRC байты - %08lx\n", calculated_crc);
+    //    printf("Входные CRC байты - %08lx\n", input_crc);
+    //    printf("Вычисленные STM32 CRC байты - %08lx\n", calculated_crc);
 
     /* Выдаем ответ */
     if (input_crc == calculated_crc) {

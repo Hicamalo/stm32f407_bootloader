@@ -36,10 +36,11 @@
 /**
  * \brief     Эта функция служит для отправки UID микроконтроллера
  */
-void send_uid(void) {
-    usart_send_response((*(uint32_t *)RESPONSE_UID_1_ADDRESS));
-    usart_send_response((*(uint32_t *)RESPONSE_UID_2_ADDRESS));
-    usart_send_response((*(uint32_t *)RESPONSE_UID_3_ADDRESS));
+void
+send_uid(void) {
+    usart_send_response((*(uint32_t*)RESPONSE_UID_1_ADDRESS));
+    usart_send_response((*(uint32_t*)RESPONSE_UID_2_ADDRESS));
+    usart_send_response((*(uint32_t*)RESPONSE_UID_3_ADDRESS));
 }
 
 /**
@@ -302,7 +303,6 @@ flash_lock(void) {
         HAL_FLASH_Unlock();
         HAL_FLASH_OB_Unlock();
 
-
         OBconfig.OptionType = OPTIONBYTE_WRP;
 
         /* Защита от случайного изменения прошивки */
@@ -356,7 +356,8 @@ flash_unlock(void) {
     printf("Провожу проверку на наличие защиты flash памяти\n");
     uint8_t flash_lock = flash_ob_check();
     if (flash_lock) {
-        printf("Отключаю защиту от чтения и записи, через 30 секунд сбросьте питание с устройства и заново запрограммируйте загрузчик\n");
+        printf("Отключаю защиту от чтения и записи, через 30 секунд сбросьте питание с устройства и заново "
+               "запрограммируйте загрузчик\n");
         HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET); /* Выключаем оранжевый светодиод */
         HAL_FLASH_Unlock();
         HAL_FLASH_OB_Unlock();
@@ -379,7 +380,6 @@ flash_unlock(void) {
 
         HAL_FLASH_OB_Launch();
 
-
         HAL_FLASH_OB_Lock();
         HAL_FLASH_Lock();
     } else {
@@ -387,11 +387,11 @@ flash_unlock(void) {
     }
 }
 
-
 /**
  * \brief     Эта функция служит для стирания пользовательской прошивки из flash памяти
  */
-void erase_program(void) {
+void
+erase_program(void) {
     erase_flash(FLASH_SECTOR_NUMBER);
 }
 
@@ -400,7 +400,8 @@ void erase_program(void) {
  *
  * \return  result: Результат проверки: TRUE (ключи шифрования соответствуют), FALSE (ключи шифрования несоответствуют)
  */
-uint8_t check_key(void) {
+uint8_t
+check_key(void) {
     uint8_t connection_try = 0;
     uint8_t result = FALSE;
 
@@ -485,7 +486,8 @@ execute_command(cmd_t command) {
             break;
         case CMD_FLASH_LOCK:
             printf("Выбрана команда для установки защиты flash памяти, выполняю...\n");
-            result = flash_lock();;
+            result = flash_lock();
+            ;
             break;
         case CMD_FLASH_UNLOCK:
             printf("Выбрана команда для снятия защиты flash памяти, выполняю...\n");

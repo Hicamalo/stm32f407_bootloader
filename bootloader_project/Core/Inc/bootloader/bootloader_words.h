@@ -47,7 +47,7 @@ extern const char header_word[NUMBER_OF_BYTES_HEADER_WORD + 2];     /* Нача�
 extern const char response_word[NUMBER_OF_BYTES_RESPONSE_WORD + 2]; /* Начало пакета типа "response" */
 extern const char data_word[NUMBER_OF_BYTES_DATA_WORD + 2];         /* Начало пакета типа "data" */
 extern const char key_word[NUMBER_OF_BYTES_KEY_WORD + 2];           /* Начало пакета типа "key" */
-extern const char test_word[NUMBER_OF_BYTES_TEST_WORD + 2];           /* Слово для проверки ключей шифрования */
+extern const char test_word[NUMBER_OF_BYTES_TEST_WORD + 2]; /* Слово для проверки ключей шифрования */
 
 /* Условный пакет типа "status" */
 /* + 2 байта нужно, чтобы учитывать нуль-терминатор */

@@ -58,8 +58,8 @@ typedef enum {
  * \note    UID - это уникальный ID микроконтроллера (96 бит)
  */
 typedef enum {
-    RESPONSE_FAIL = 0x33333333, /* Код ошибки */
-    RESPONSE_OK = 0xFFFFFFFF,   /* Код успеха */
+    RESPONSE_FAIL = 0x33333333,          /* Код ошибки */
+    RESPONSE_OK = 0xFFFFFFFF,            /* Код успеха */
     RESPONSE_UID_1_ADDRESS = 0x1FFF7A10, /* Первые 32 бита */
     RESPONSE_UID_2_ADDRESS = 0x1FFF7A14, /* Вторые 32 бита */
     RESPONSE_UID_3_ADDRESS = 0x1FFF7A18, /* Третьи 32 бита */
