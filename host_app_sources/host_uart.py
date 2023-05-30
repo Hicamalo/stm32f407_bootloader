@@ -17,7 +17,7 @@ def get_key(val, dictionary):
 
 # Функция для выбора человека, использующего программу
 def input_mode():
-    print("Выберете человека, использующего загрузчик:")
+    print("Выберите человека, использующего загрузчик:")
     for mode_number, mode_name in persons.items():
         print(f"{mode_number}. {mode_name}")
 
@@ -60,7 +60,7 @@ def input_user_bootloader_command():
 
 # Функция для ввода команд от разработчика
 def developer_input_command():
-    print("Режимы команды хост программы:")
+    print("Список команд хост программы:")
     for mode_number, mode_description in host_developer_commands.items():
         print(f"{mode_number}. {mode_description}")
 
@@ -141,7 +141,7 @@ def start_uart_connection():
             baudrate_string = delimiter.join(str(baudrate) for baudrate in supported_baudrates)
 
             input_baudrate = input(
-                'Пожалуйста, выберете поддерживаемую скорость COM-порта из списка : ' + baudrate_string + '\n')
+                'Пожалуйста, выберите поддерживаемую скорость COM-порта из списка : ' + baudrate_string + '\n')
             input_baudrate = input_baudrate.strip()
 
             for baudrate in supported_baudrates:
@@ -153,15 +153,15 @@ def start_uart_connection():
                 print('Скорость не поддерживается:', input_baudrate)
 
         print(
-            'Убедитесь, что UART устройства установлены со следующими настройками: World Length = 8 Bits; Parity = None; Stop Bits = 1;')
+            'Убедитесь, что интефейс USART устройства установлен со следующими настройками: World Length = 8 Bits; Parity = None; Stop Bits = 1;')
 
         serial_com = serial.Serial(com_port, input_baudrate, EIGHTBITS, PARITY_NONE, STOPBITS_ONE, timeout=15)
 
         if serial_com.is_open:
-            print(f"UART соединение с {serial_com.name} успешно установлено!")
+            print(f"USART соединение с {serial_com.name} успешно установлено!")
             print(f"Перезагрузите устройство, чтобы начать работать с загрузчиком")
         else:
-            raise Exception(f"Ошибка установки UART соединения!")
+            raise Exception(f"Ошибка установки USART соединения!")
         return serial_com
 
     except Exception as e:

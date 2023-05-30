@@ -1,0 +1,74 @@
+[2023-05-30T20:14:15.078145 23192] === CCACHE 4.6 STARTED =========================================
+[2023-05-30T20:14:15.078145 23192] Config: (default) absolute_paths_in_stderr = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) base_dir = 
+[2023-05-30T20:14:15.078145 23192] Config: (environment) cache_dir = C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2023-05-30T20:14:15.078145 23192] Config: (default) compiler = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) compiler_check = mtime
+[2023-05-30T20:14:15.078145 23192] Config: (default) compiler_type = auto
+[2023-05-30T20:14:15.078145 23192] Config: (default) compression = true
+[2023-05-30T20:14:15.078145 23192] Config: (default) compression_level = 0
+[2023-05-30T20:14:15.078145 23192] Config: (default) cpp_extension = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) debug = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) debug_dir = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) depend_mode = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) direct_mode = true
+[2023-05-30T20:14:15.078145 23192] Config: (default) disable = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) extra_files_to_hash = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) file_clone = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) hard_link = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) hash_dir = true
+[2023-05-30T20:14:15.078145 23192] Config: (default) ignore_headers_in_manifest = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) ignore_options = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) inode_cache = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) keep_comments_cpp = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) limit_multiple = 0.8
+[2023-05-30T20:14:15.078145 23192] Config: (environment) log_file = C:\Users\SoloPC\Desktop\BOOTLO~1\STM32F~1\HOST_A~1\main.onefile-build\ccache-12492.txt
+[2023-05-30T20:14:15.078145 23192] Config: (default) max_files = 0
+[2023-05-30T20:14:15.078145 23192] Config: (default) max_size = 5.0G
+[2023-05-30T20:14:15.078145 23192] Config: (default) namespace = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) path = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) pch_external_checksum = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) prefix_command = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) prefix_command_cpp = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) read_only = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) read_only_direct = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) recache = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) reshare = false
+[2023-05-30T20:14:15.078145 23192] Config: (default) run_second_cpp = true
+[2023-05-30T20:14:15.078145 23192] Config: (default) secondary_storage = 
+[2023-05-30T20:14:15.078145 23192] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2023-05-30T20:14:15.078145 23192] Config: (default) stats = true
+[2023-05-30T20:14:15.078145 23192] Config: (default) stats_log = 
+[2023-05-30T20:14:15.078145 23192] Config: (default) temporary_dir = C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2023-05-30T20:14:15.078145 23192] Config: (default) umask = 
+[2023-05-30T20:14:15.078145 23192] Command line: C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\downloads\ccache\v4.6\ccache.exe C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\downloads\gcc\x86_64\11.3.0-14.0.3-10.0.0-msvcrt-r3\mingw64\bin\gcc.exe -o static_src\OnefileBootstrap.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_ONEFILE_MODE -I. -IC:\Users\SoloPC\Desktop\HostApp\venv\lib\SITE-P~1\nuitka\build\include -IC:\Users\SoloPC\Desktop\HostApp\venv\lib\SITE-P~1\nuitka\build\static_src -IC:\Users\SoloPC\Desktop\HostApp\venv\lib\SITE-P~1\nuitka\build\inline_copy\zstd static_src\OnefileBootstrap.c
+[2023-05-30T20:14:15.082332 23192] Hostname: DESKTOP-7UVQHCS
+[2023-05-30T20:14:15.082332 23192] Working directory: C:/Users/SoloPC/Desktop/BOOTLO~1/STM32F~1/HOST_A~1/main.onefile-build
+[2023-05-30T20:14:15.082332 23192] Compiler type: gcc
+[2023-05-30T20:14:15.082332 23192] Source file: static_src\OnefileBootstrap.c
+[2023-05-30T20:14:15.082332 23192] Object file: static_src\OnefileBootstrap.o
+[2023-05-30T20:14:15.082332 23192] Trying direct lookup
+[2023-05-30T20:14:15.082332 23192] No 8f7aco23chk7k7ivrckm7maneqcf82i2e in primary storage
+[2023-05-30T20:14:15.083333 23192] Running preprocessor
+[2023-05-30T20:14:16.304969 23192] Got result key from preprocessor
+[2023-05-30T20:14:16.304969 23192] No 3a44bo1n1oec73vqkrh4j9kucmoi0ht4s in primary storage
+[2023-05-30T20:14:16.304969 23192] Running real compiler
+[2023-05-30T20:14:18.117792 23192] Using default compression level 1
+[2023-05-30T20:14:18.117792 23192] Storing embedded entry #0 .o (539631 bytes) from static_src\OnefileBootstrap.o
+[2023-05-30T20:14:18.120795 23192] Stored 3a44bo1n1oec73vqkrh4j9kucmoi0ht4s in primary storage (C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/a/44bo1n1oec73vqkrh4j9kucmoi0ht4sR)
+[2023-05-30T20:14:18.120795 23192] Adding result key to C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/f/7aco23chk7k7ivrckm7maneqcf82i2eM
+[2023-05-30T20:14:18.129803 23192] Using default compression level 1
+[2023-05-30T20:14:18.131805 23192] Stored 8f7aco23chk7k7ivrckm7maneqcf82i2e in primary storage (C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/f/7aco23chk7k7ivrckm7maneqcf82i2eM)
+[2023-05-30T20:14:18.131805 23192] Result: cache_miss
+[2023-05-30T20:14:18.131805 23192] Result: direct_cache_miss
+[2023-05-30T20:14:18.131805 23192] Result: preprocessed_cache_miss
+[2023-05-30T20:14:18.131805 23192] Result: primary_storage_miss
+[2023-05-30T20:14:18.131805 23192] Acquired lock C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/stats.lock
+[2023-05-30T20:14:18.132806 23192] Releasing lock C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/stats.lock
+[2023-05-30T20:14:18.132806 23192] Acquired lock C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2023-05-30T20:14:18.133807 23192] Releasing lock C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/stats.lock
+[2023-05-30T20:14:18.133807 23192] Unlink C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.205EwQ
+[2023-05-30T20:14:18.133807 23192] Unlink C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.dEN0O3
+[2023-05-30T20:14:18.133807 23192] Unlink C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.A2zKja
+[2023-05-30T20:14:18.133807 23192] Unlink C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.Jw8M4t.i
+[2023-05-30T20:14:18.134808 23192] Unlink C:\Users\SoloPC\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.Jw8M4t
